@@ -120,6 +120,27 @@ public class AplikasiTodoList {
         System.out.println(name + " oeee ");
     }
 
+    public static void viewShowTodolist(){
+        while (true){
+            showTodoList();
+            System.out.println("MENU : ");
+            System.out.println("1. tambah : ");
+            System.out.println("2. hapus : ");
+            System.out.println("x. keluar : ");
+
+            String input = input("pilih");
+            if (input.equals("1")){
+                viewAddTodolist();
+            } else if (input.equals("2")){
+                viewRemoveTodolistt();
+            } else if (input.equals("x")) {
+                break;
+            } else {
+                System.out.println("pilihan tidak dikenali!!!!!!!!");
+            }
+        }
+    }
+
 
     /**
      *
