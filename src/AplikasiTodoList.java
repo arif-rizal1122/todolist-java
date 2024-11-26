@@ -1,14 +1,17 @@
+import java.util.Scanner;
 
 public class AplikasiTodoList {
 
     public static String[] model = new String[10];
-
+    public static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
 
      // testShowTodolist();
      // testAddTodoList();
      testRemoveTodoList();
+     testInput();
+     scanner.close();
     }
 
     public static void showTodoList(){
@@ -100,6 +103,21 @@ public class AplikasiTodoList {
         System.out.println(result);
 
         showTodoList();
+    }
+
+
+
+    public static String input(String info){
+        System.out.print(info + " : ");
+        String data = scanner.nextLine();
+        return data;
+    }
+
+    public static void testInput(){
+        String name = input("name");
+        String channel = input("channel");
+        System.out.println(channel + " channel ");
+        System.out.println(name + " oeee ");
     }
 
 
