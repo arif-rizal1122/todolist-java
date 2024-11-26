@@ -20,6 +20,18 @@ public class AplikasiTodoList {
     public static void removeTodoList(){
 
     }
+    /**
+     *
+     * Menetukan view todolist nya
+     *
+     * */
+    public static void viewAddTodolist(){
+
+    }
+    public static void removeTodolistt(){
+
+    }
+
 
 
 
