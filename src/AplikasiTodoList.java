@@ -11,7 +11,8 @@ public class AplikasiTodoList {
      // testAddTodoList();
      // testRemoveTodoList();
      // testInput();
-     testViewShowTodoList();
+      testViewShowTodoList();
+//        testAddTodoList();
      scanner.close();
     }
 
@@ -168,7 +169,15 @@ public class AplikasiTodoList {
             addTodoList(todo);
         }
     }
+    public static void testViewAddTodoList(){
+        addTodoList("satu");
+        addTodoList("dua");
+        addTodoList("tiga");
+        addTodoList("empat");
 
+        viewAddTodolist();
+        showTodoList();
+    }
 
 
     public static void viewRemoveTodolistt(){
