@@ -159,7 +159,14 @@ public class AplikasiTodoList {
      *
      * */
     public static void viewAddTodolist(){
+        System.out.println("menambhakan todolist ");
+        String todo = input("todo (x jika batal)");
 
+        if (todo.equals("x")){
+            // batal
+        } else {
+            addTodoList(todo);
+        }
     }
 
 
