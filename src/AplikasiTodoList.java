@@ -12,7 +12,7 @@ public class AplikasiTodoList {
      // testRemoveTodoList();
      // testInput();
       testViewShowTodoList();
-//        testAddTodoList();
+      // testAddTodoList();
      scanner.close();
     }
 
@@ -181,6 +181,17 @@ public class AplikasiTodoList {
 
 
     public static void viewRemoveTodolistt(){
+        System.out.println("menghapus todolist ");
+
+        String number = input("menghapus todolist (x jika batal) ");
+        if (number.equals("x")){
+            // batal
+        } else {
+            boolean success = removeTodoList(Integer.valueOf(number));
+            if (!success){
+                System.out.println("gagal menghapus todolist number : ");
+            }
+        }
 
     }
 
