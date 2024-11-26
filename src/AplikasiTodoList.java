@@ -6,7 +6,7 @@ public class AplikasiTodoList {
 
     public static void main(String[] args) {
 
-//        testShowTodolist();
+     // testShowTodolist();
         testAddTodoList();
     }
 
@@ -63,9 +63,20 @@ public class AplikasiTodoList {
         showTodoList();
     }
 
-    public static void removeTodoList(){
-
+    public static boolean removeTodoList(Integer number){
+        if ((number - 1) >= model.length){
+//  Langkah pertama adalah memeriksa apakah indeks yang dihitung (number - 1) berada di luar batas panjang array model.
+//  Jika number - 1 lebih besar atau sama dengan panjang array model, berarti nomor item yang diberikan tidak valid (karena berada di luar jangkauan daftar), dan metode akan mengembalikan false.
+            return false;
+        } else if (model[number - 1] == null){
+             return false;
+        } else {
+            model[number - 1] = null;
+            return true;
+        }
     }
+
+
     /**
      *
      * Menetukan view todolist nya
@@ -77,7 +88,7 @@ public class AplikasiTodoList {
 
 
 
-    public static void removeTodolistt(){
+    public static void viewRemoveTodolistt(){
 
     }
 
