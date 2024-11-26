@@ -9,12 +9,14 @@ public class AplikasiTodoList {
 
      // testShowTodolist();
      // testAddTodoList();
-     testRemoveTodoList();
-     testInput();
+     // testRemoveTodoList();
+     // testInput();
+     testViewShowTodoList();
      scanner.close();
     }
 
     public static void showTodoList(){
+        System.out.println("TODOLIST");
         for (int i = 0; i < model.length; i++) {
             String todo = model[i];
             var nomor =  i + 1;
@@ -139,6 +141,15 @@ public class AplikasiTodoList {
                 System.out.println("pilihan tidak dikenali!!!!!!!!");
             }
         }
+    }
+
+    public static void testViewShowTodoList(){
+        addTodoList("satu");
+        addTodoList("dua");
+        addTodoList("tiga");
+        addTodoList("empat");
+
+        viewShowTodolist();
     }
 
 
