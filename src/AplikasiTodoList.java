@@ -5,7 +5,9 @@ public class AplikasiTodoList {
 
 
     public static void main(String[] args) {
-        testShowTodolist();
+
+//        testShowTodolist();
+        testAddTodoList();
     }
 
     public static void showTodoList(){
@@ -31,7 +33,6 @@ public class AplikasiTodoList {
             if (model[i] == null){
                 // model masih ada yg kosong
                 penuh = false;
-                System.out.println();
                 break;
             }
         }
@@ -41,7 +42,6 @@ public class AplikasiTodoList {
             model = new String[model.length * 2]; // array baru
             for (int i = 0; i < temp.length; i++) {
                if (model[i] == temp[1]){
-                   System.out.println("data sudah penuh ");
                    break;
                }
             }
@@ -57,7 +57,10 @@ public class AplikasiTodoList {
     }
 
     public static void testAddTodoList(){
-
+        for (int i = 1; i < 10; i++) {
+            addTodoList("contoh to do ke = " + i);
+        }
+        showTodoList();
     }
 
     public static void removeTodoList(){
